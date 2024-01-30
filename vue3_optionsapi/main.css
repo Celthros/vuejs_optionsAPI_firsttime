@@ -101,6 +101,17 @@ body {
     letter-spacing: 0.5px;
     margin: 0.5rem 0;
   }
+
+  .add-item-form input[type='checkbox']{
+    width: auto !important;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  label{
+    cursor: pointer;
+  }
   
   .btn {
     border: none;

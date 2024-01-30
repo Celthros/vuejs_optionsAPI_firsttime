@@ -16,8 +16,8 @@
             v-model="newItem" 
             type="text" 
             placeholder="Add an item" />
-            <label>
-                <input type="checkbox" v-model="newItemHighPriority"> High Priority
+            <label for="prioritybox">
+                <input id="prioritybox" type="checkbox" v-model="newItemHighPriority"> High Priority
             </label>
             <button 
             @click="saveItem" 
