@@ -39,8 +39,11 @@
             v-for="item in reversedItems" 
             @click="togglePurchased(item)"
             :key="item.id"
-            :class="{strikeout: item.purchased, priority: item.highPriority}"
-            class="static-class"
+            :class="[
+                {strikeout: item.purchased}, 
+                {priority: item.highPriority},
+                'static-class'
+            ]"
             >{{ item.label }}</li>
         </ul>
     </div>
